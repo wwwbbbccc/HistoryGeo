@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    tools:context=".NewTownshipActivity">
+
+    <TextView
+        android:id="@+id/labTPro"
+        style="@style/customTextViewStyle"
+        android:layout_width="70dp"
+        android:layout_margin="0dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:text="省份"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtProvince"
+        style="@style/customTextViewBorderStyle"
+        android:layout_width="wrap_content"
+        android:layout_margin="0dp"
+        android:ems="14"
+        app:layout_constraintLeft_toRightOf="@+id/labTPro"
+        app:layout_constraintTop_toTopOf="@+id/labTPro" />
+
+    <TextView
+        android:id="@+id/txtTMun"
+        style="@style/customTextViewStyle"
+        android:layout_width="70dp"
+        android:layout_margin="0dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="20dp"
+        android:text="市"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/labTPro" />
+
+    <TextView
+        android:id="@+id/txtMunicipality"
+        style="@style/customTextViewBorderStyle"
+        android:layout_width="0dp"
+        android:layout_margin="0dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="20dp"
+        android:ems="14"
+        app:layout_constraintLeft_toRightOf="@+id/txtTMun"
+        app:layout_constraintTop_toBottomOf="@+id/labTPro" />
+
+    <TextView
+        android:id="@+id/txtTCounty"
+        style="@style/customTextViewStyle"
+        android:layout_width="70dp"
+        android:layout_margin="0dp"
+        android:text="区县"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtMunicipality" />
+
+    <TextView
+        android:id="@+id/txtCounty"
+        style="@style/customTextViewBorderStyle"
+        android:layout_width="0dp"
+
+        android:layout_margin="0dp"
+        android:ems="14"
+        app:layout_constraintLeft_toRightOf="@+id/txtTCounty"
+        app:layout_constraintTop_toBottomOf="@+id/txtMunicipality" />
+
+    <TextView
+        android:id="@+id/txtTTown"
+        style="@style/customTextViewStyle"
+        android:layout_width="70dp"
+        android:layout_margin="0dp"
+        android:text="乡镇"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtTCounty" />
+
+    <EditText
+        android:id="@+id/edtTownName"
+        style="@style/MyEditTextStyle"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_margin="0dp"
+        android:ems="14"
+        android:hint="请输入搜索地名"
+        android:singleLine="true"
+        app:layout_constraintLeft_toRightOf="@+id/txtTTown"
+        app:layout_constraintTop_toBottomOf="@+id/txtTCounty" />
+
+    <TextView
+        android:id="@+id/txtTvill"
+        style="@style/customTextViewStyle"
+        android:layout_width="70dp"
+        android:layout_margin="0dp"
+        android:text="乡镇id"
+        android:textSize="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtTTown" />
+
+    <EditText
+        android:id="@+id/edtTownid"
+        style="@style/MyEditTextStyle"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_margin="0dp"
+        android:ems="14"
+        android:hint="请输入ID"
+        app:layout_constraintLeft_toRightOf="@+id/txtTvill"
+        app:layout_constraintTop_toBottomOf="@+id/txtTTown" />
+
+    <TextView
+        android:id="@+id/txtTLng"
+        style="@style/customTextViewStyle"
+        android:layout_width="70dp"
+        android:layout_margin="0dp"
+        android:text="经度"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtTvill" />
+
+    <EditText
+        android:id="@+id/edtLng"
+        style="@style/MyEditTextStyle"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_margin="0dp"
+        android:ems="14"
+        android:hint="请输入经度"
+        app:layout_constraintLeft_toRightOf="@+id/txtTLng"
+        app:layout_constraintTop_toBottomOf="@+id/txtTvill" />
+
+    <TextView
+        android:id="@+id/txtTLat"
+        style="@style/customTextViewStyle"
+        android:layout_width="70dp"
+        android:layout_margin="0dp"
+        android:text="纬度"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtTLng" />
+
+    <EditText
+        android:id="@+id/edtlat"
+        style="@style/MyEditTextStyle"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_margin="0dp"
+        android:ems="14"
+        android:hint="请输入纬度"
+        app:layout_constraintLeft_toRightOf="@+id/txtTLat"
+        app:layout_constraintTop_toBottomOf="@+id/txtTLng" />
+
+<!--    <Button-->
+<!--        android:id="@+id/btn_newTownship"-->
+<!--        style="@style/btn_nomal_style"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/edtlat"-->
+<!--        android:onClick="onBtnTownSaveClick"-->
+<!--        android:text="保存"/>-->
+</androidx.constraintlayout.widget.ConstraintLayout>

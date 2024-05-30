@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="btn_nomal_style">
+        <item name="android:minHeight">0dp</item>
+        <item name="android:minWidth">0dp</item>
+        <item name="android:paddingLeft">10dp</item>
+        <item name="android:paddingRight">10dp</item>
+        <item name="android:paddingBottom">4dp</item>
+        <item name="android:paddingTop">2dp</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:background">@drawable/button_style</item>
+    </style>
+
+    <style name="MyEditTextStyle">
+        <item name="android:layout_margin">5dp</item>
+        <item name="android:padding">5dp</item>
+        <item name="android:singleLine">true</item>
+         <item name="android:background">@drawable/bg_edittext</item>
+        <item name="android:textColorHint">#95A1AA</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:textSize">20dp</item>
+    </style>
+    <style name="customSpinnerStyle" >
+        <item name="android:textAlignment">textStart</item>
+        <item name="android:layout_height">36dp</item>
+        <item name="divider">@color/black</item>
+        <item name="android:background">@drawable/shape_for_custom_spinner</item>
+        <item name="android:popupBackground">@drawable/selector_for_custom_spinner</item>
+        <item name="android:divider">@null</item>
+        <item name="android:dividerHeight">10dp</item>
+    </style>
+    <style name="customTextViewStyle" >
+        <item name="android:padding">5dp</item>
+        <item name="android:layout_margin">5dp</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="divider">@color/blue</item>
+        <item name="android:textColor">#019385</item>
+        <item name="android:dividerHeight">1dp</item>
+        <item name="android:textSize">20dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_width">match_parent</item>
+    </style>
+    <style name="customTextViewBorderStyle" parent="customTextViewStyle" >
+        <item name="android:textColor">@color/black</item>
+        <item name="android:layout_gravity">left</item>
+        <item name="android:gravity">left</item>
+        <item name="android:background">@drawable/sharp_textview_border</item>
+    </style>
+    <style name="comm_listview_style">
+        <item name="android:cacheColorHint">@android:color/transparent</item>
+        <item name="android:listSelector">@android:color/transparent</item>
+        <item name="android:dividerHeight">6dip</item>
+        <item name="android:divider">@null</item>
+        <item name="android:headerDividersEnabled">true</item>
+        <item name="android:footerDividersEnabled">true</item>
+    </style>
+</resources>

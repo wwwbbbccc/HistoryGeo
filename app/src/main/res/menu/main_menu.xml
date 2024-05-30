@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/add_item"
+        android:title="维护" />
+    <item
+        android:id="@+id/delete_item"
+        android:title="增加" />
+    <item
+        android:id="@+id/getPath_item"
+        android:title="获取路径" />
+    <item
+        android:id="@+id/brower_item"
+        android:title="浏览" />
+    <item
+        android:id="@+id/prev_item"
+        android:title="上一条" />
+    <item
+        android:id="@+id/next_item"
+        android:title="下一条" />
+</menu>

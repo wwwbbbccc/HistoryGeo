@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    style="@style/customTextViewBorderStyle">
+
+    <TextView
+        android:id="@+id/txtid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="8dip"
+        android:paddingRight="8dip"
+        android:text="TextView"
+        android:visibility="gone"
+        android:textSize="15sp" />
+    <TextView
+        android:id="@+id/txtLabOldName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="旧称："
+        android:textSize="15sp"
+        android:gravity="center"
+        app:layout_constraintStart_toStartOf="parent" />
+    <TextView
+        android:id="@+id/txtShowOldNamee"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:textSize="15sp"
+        app:layout_constraintLeft_toRightOf="@+id/txtLabOldName" />
+    <TextView
+        android:id="@+id/txtLabGeo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:text="地区："
+        android:textSize="15sp"
+        android:gravity="center"
+        app:layout_constraintLeft_toRightOf="@+id/txtShowOldNamee" />
+    <TextView
+        android:id="@+id/txtShowProvince"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:textSize="15sp"
+        app:layout_constraintLeft_toRightOf="@+id/txtLabGeo" />
+    <TextView
+        android:id="@+id/txtLabHistory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="朝代："
+        android:textSize="15sp"
+        android:gravity="center"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtLabGeo"/>
+    <TextView
+        android:id="@+id/txtShowHistory"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="TextView"
+        android:textSize="15sp"
+        app:layout_constraintLeft_toRightOf="@+id/txtLabHistory"
+        app:layout_constraintTop_toBottomOf="@+id/txtLabGeo"/>
+
+
+
+    <TextView
+        android:id="@+id/txtMemo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:textSize="16sp"
+        app:layout_constraintLeft_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtShowHistory" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,22 @@
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Lesson/HistoryGeography/app/src/main/res/layout/activity_edit.xml" value="0.17806484295845998" />
+        <entry key="..\:/Lesson/HistoryGeography/app/src/main/res/layout/activity_main.xml" value="0.14444444444444443" />
+        <entry key="..\:/Lesson/HistoryGeography/app/src/main/res/layout/activity_new_township.xml" value="0.33" />
+        <entry key="..\:/Lesson/HistoryGeography/app/src/main/res/layout/activity_new_village.xml" value="0.36614583333333334" />
+        <entry key="..\:/Lesson/HistoryGeography/app/src/main/res/layout/activity_test_dialog.xml" value="0.1" />
+        <entry key="..\:/Lesson/HistoryGeography/app/src/main/res/layout/item.xml" value="0.1875" />
+        <entry key="..\:/Lesson/HistoryGeography/app/src/main/res/layout/listview_item.xml" value="0.1408514492753623" />
+        <entry key="..\:/Lesson/HistoryGeography/app/src/main/res/layout/testdialog.xml" value="0.17806484295845998" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_17" default="true" project-jdk-name="jbr-17" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+<RelativeLayout android:id="@+id/linearTop"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <EditText
+        android:id="@+id/edtSearch"
+        style="@style/MyEditTextStyle"
+        android:layout_alignParentLeft="true"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_toLeftOf="@+id/btnSearch"
+        android:hint="请输入搜索地名"
+        android:imeOptions="actionSearch" />
+
+    <ImageButton
+        android:id="@+id/btnSearch"
+        android:layout_width="46dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_alignParentRight="true"
+        android:gravity="right"
+        android:src="@drawable/baseline_search_24"
+        app:layout_constraintRight_toRightOf="parent" />
+</RelativeLayout>
+
+    <ListView
+        android:id="@+id/listview"
+        style="@style/comm_listview_style"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginRight="5dp"
+        android:divider="@null"
+        android:dividerHeight="10dp"
+        app:layout_constraintLeft_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearTop" />
+
+
+
+</LinearLayout>

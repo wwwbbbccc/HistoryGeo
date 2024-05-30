@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/add_Township"
+        android:title="新增乡镇"
+        />
+    <item
+        android:id="@+id/add_Village"
+        android:title="新增村"
+        />
+    <item
+        android:id="@+id/del_Township"
+        android:title="删除乡镇"
+        />
+    <item
+        android:id="@+id/del_Village"
+        android:title="删除村"
+        />
+</menu>

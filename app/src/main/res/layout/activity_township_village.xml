@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:theme="@android:style/Theme.Dialog"
+    tools:context=".TownshipVillageActivity">
+
+
+    <TextView
+        android:id="@+id/labTownPro"
+        style="@style/customTextViewStyle"
+        android:layout_width="match_parent"
+        android:gravity="left"
+       app:layout_constraintTop_toTopOf="parent"
+        android:text="省份" />
+
+    <Spinner
+        android:id="@+id/spinner_Province"
+        style="@style/customSpinnerStyle"
+        android:layout_width="match_parent"
+        app:layout_constraintLeft_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/labTownPro"/>
+
+    <TextView
+        android:id="@+id/labTownMun"
+        style="@style/customTextViewStyle"
+        android:layout_width="match_parent"
+        android:gravity="left"
+        android:text="城市"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinner_Province" />
+
+    <Spinner
+        android:id="@+id/spinner_Municipalitys"
+        style="@style/customSpinnerStyle"
+        android:layout_width="match_parent"
+        app:layout_constraintTop_toBottomOf="@+id/labTownMun" />
+
+    <TextView
+        android:id="@+id/labTownCounty"
+        style="@style/customTextViewStyle"
+        android:layout_width="match_parent"
+        android:gravity="left"
+        android:text="县"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinner_Municipalitys" />
+
+    <Spinner
+        android:id="@+id/spinner_Countys"
+        style="@style/customSpinnerStyle"
+        android:layout_width="match_parent"
+        app:layout_constraintTop_toBottomOf="@+id/labTownCounty"/>
+
+    <TextView
+        android:id="@+id/labTownTown"
+        android:layout_width="match_parent"
+        style="@style/customTextViewStyle"
+        android:gravity="left"
+        android:text="乡镇"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinner_Countys" />
+
+    <Spinner
+        android:id="@+id/spinner_Township"
+        style="@style/customSpinnerStyle"
+        android:layout_width="match_parent"
+        app:layout_constraintTop_toBottomOf="@+id/labTownTown" />
+
+    <TextView
+        android:id="@+id/labTownVill"
+        style="@style/customTextViewStyle"
+        android:layout_width="match_parent"
+        android:text="村"
+        android:gravity="left"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinner_Township" />
+
+    <Spinner
+        android:id="@+id/spinner_Villiages"
+        style="@style/customSpinnerStyle"
+        android:layout_width="match_parent"
+        app:layout_constraintLeft_toRightOf="@+id/labTownVill"
+        app:layout_constraintTop_toBottomOf="@+id/labTownVill" />
+
+<!--    <Button-->
+<!--        android:id="@+id/btn_newTownship"-->
+<!--        style="@style/btn_nomal_style"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:onClick="onBtnTownAddClick"-->
+<!--        android:text="新增"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/spinner_Villiages" />-->
+
+<!--    <Button-->
+<!--        android:id="@+id/btn_newVillage"-->
+<!--        style="@style/btn_nomal_style"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:onClick="onBtnVillageAddClick"-->
+<!--        android:text="新增"-->
+<!--        app:layout_constraintLeft_toRightOf="@+id/btn_newTownship"-->
+<!--        app:layout_constraintTop_toTopOf="@+id/btn_newTownship"/>-->
+
+</androidx.constraintlayout.widget.ConstraintLayout>

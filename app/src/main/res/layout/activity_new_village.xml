@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NewVillageActivity">
+
+    <TextView
+        android:id="@+id/txtVPro"
+        style="@style/customTextViewStyle"
+        android:layout_width="match_parent"
+        android:text="省份"
+        android:gravity="left"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtVProvince"
+        style="@style/customTextViewBorderStyle"
+        app:layout_constraintLeft_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtVPro" />
+
+    <TextView
+        android:id="@+id/txtVMun"
+        style="@style/customTextViewStyle"
+        android:layout_width="match_parent"
+        android:text="市"
+        android:gravity="left"
+        app:layout_constraintLeft_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtVProvince" />
+
+    <TextView
+        android:id="@+id/txtVMunicipality"
+        style="@style/customTextViewBorderStyle"
+        android:layout_width="match_parent"
+        app:layout_constraintLeft_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtVMun" />
+
+    <TextView
+        android:id="@+id/txtVCounty"
+        style="@style/customTextViewStyle"
+        android:layout_width="match_parent"
+        android:text="区县"
+        android:gravity="left"
+        app:layout_constraintLeft_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtVMunicipality" />
+
+    <TextView
+        android:id="@+id/txtVCountyName"
+        style="@style/customTextViewBorderStyle"
+        android:layout_width="match_parent"
+        app:layout_constraintLeft_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtVCounty" />
+
+    <TextView
+        android:id="@+id/txtVTownship"
+        style="@style/customTextViewStyle"
+        android:layout_width="match_parent"
+        android:text="乡镇"
+        android:gravity="left"
+        app:layout_constraintLeft_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtVCountyName" />
+
+    <TextView
+        android:id="@+id/txtVTownName"
+        style="@style/customTextViewBorderStyle"
+        android:layout_width="match_parent"
+        app:layout_constraintLeft_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtVTownship" />
+
+    <TextView
+        android:id="@+id/txtVVill"
+        style="@style/customTextViewStyle"
+        android:layout_width="match_parent"
+        android:text="村"
+        android:gravity="left"
+        app:layout_constraintLeft_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtVTownName" />
+
+    <EditText
+        android:id="@+id/edtVillageName"
+        style="@style/MyEditTextStyle"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="请输入地名"
+        app:layout_constraintLeft_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtVVill" />
+
+    <TextView
+        android:id="@+id/txtVVillid"
+        style="@style/customTextViewStyle"
+        android:layout_width="match_parent"
+        android:text="村id"
+        android:gravity="left"
+        app:layout_constraintLeft_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtVillageName" />
+
+    <EditText
+        android:id="@+id/edtVillageid"
+        style="@style/MyEditTextStyle"
+        android:layout_height="50dp"
+        android:hint="请输入地名ID"
+        app:layout_constraintLeft_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtVVillid" />
+
+    <TextView
+        android:id="@+id/txtVLag"
+        style="@style/customTextViewStyle"
+        android:layout_width="match_parent"
+        android:text="经度"
+        android:gravity="left"
+        app:layout_constraintLeft_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtVillageid" />
+
+    <EditText
+        android:id="@+id/edtVLng"
+        style="@style/MyEditTextStyle"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="请输入经度"
+        app:layout_constraintLeft_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtVLag" />
+
+    <TextView
+        android:id="@+id/txtVLat"
+        style="@style/customTextViewStyle"
+        android:layout_width="match_parent"
+        android:text="纬度"
+        android:gravity="left"
+        app:layout_constraintLeft_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtVLng" />
+
+    <EditText
+        android:id="@+id/edtVlat"
+        style="@style/MyEditTextStyle"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="请输入纬度"
+        app:layout_constraintLeft_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtVLat" />
+
+<!--    <Button-->
+<!--        android:id="@+id/btn_newVillage"-->
+<!--        style="@style/btn_nomal_style"-->
+<!--        android:layout_width="100dp"-->
+<!--        android:layout_height="40dp"-->
+<!--        android:gravity="left"-->
+<!--        android:onClick="onBtnVillageSaveClick"-->
+<!--        android:text="保存"-->
+<!--        app:layout_constraintLeft_toRightOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/edtVlat" />-->
+</androidx.constraintlayout.widget.ConstraintLayout>

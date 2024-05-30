@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".NewActivity">
+
+        <TextView
+            android:id="@+id/txtNPro"
+            style="@style/customTextViewStyle"
+            android:textSize="15sp"
+            android:layout_height="30dp"
+            android:gravity="left"
+            android:text="省份"
+            app:layout_constraintLeft_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Spinner
+            android:id="@+id/spinNewProvince"
+            style="@style/customSpinnerStyle"
+            android:layout_width="match_parent"
+            app:layout_constraintLeft_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtNPro" />
+
+        <TextView
+            android:id="@+id/txtNMun"
+            style="@style/customTextViewStyle"
+            android:layout_width="match_parent"
+            android:textSize="15sp"
+            android:layout_height="30dp"
+            android:gravity="left"
+            android:text="市"
+            app:layout_constraintLeft_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/spinNewProvince" />
+
+        <Spinner
+            android:id="@+id/spinNewMunicipality"
+            style="@style/customSpinnerStyle"
+            android:layout_width="match_parent"
+            app:layout_constraintLeft_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtNMun" />
+
+        <TextView
+            android:id="@+id/txtNCounty"
+            style="@style/customTextViewStyle"
+            android:textSize="15sp"
+            android:layout_height="30dp"
+            android:gravity="left"
+            android:text="区县"
+            app:layout_constraintLeft_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/spinNewMunicipality" />
+
+        <Spinner
+            android:id="@+id/spinNewCounty"
+            style="@style/customSpinnerStyle"
+            android:layout_width="match_parent"
+
+            app:layout_constraintLeft_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtNCounty" />
+
+        <TextView
+            android:id="@+id/txtNTown"
+            style="@style/customTextViewStyle"
+            android:layout_width="match_parent"
+            android:textSize="15sp"
+            android:layout_height="30dp"
+            android:gravity="left"
+            android:text="乡镇"
+            app:layout_constraintLeft_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/spinNewCounty" />
+
+        <Spinner
+            android:id="@+id/spinNewTownship"
+            style="@style/customSpinnerStyle"
+            android:layout_width="match_parent"
+
+            app:layout_constraintLeft_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtNTown" />
+
+        <TextView
+            android:id="@+id/txtNVill"
+            style="@style/customTextViewStyle"
+            android:layout_width="match_parent"
+            android:textSize="15sp"
+            android:layout_height="30dp"
+            android:gravity="left"
+            android:text="村"
+            app:layout_constraintLeft_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/spinNewTownship" />
+
+        <Spinner
+            android:id="@+id/spinNewVillage"
+            style="@style/customSpinnerStyle"
+            android:layout_width="match_parent"
+
+            app:layout_constraintLeft_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtNVill" />
+
+        <TextView
+            android:id="@+id/txtNHis"
+            style="@style/customTextViewStyle"
+            android:layout_width="match_parent"
+            android:textSize="15sp"
+            android:layout_height="30dp"
+            android:gravity="left"
+            android:text="朝代"
+            app:layout_constraintLeft_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/spinNewVillage" />
+
+        <Spinner
+            android:id="@+id/spinNewHis"
+            style="@style/customSpinnerStyle"
+            android:layout_width="match_parent"
+            app:layout_constraintLeft_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtNHis" />
+
+        <TextView
+            android:id="@+id/txtNGeo"
+            style="@style/customTextViewStyle"
+            android:layout_width="match_parent"
+            android:textSize="15sp"
+            android:layout_height="30dp"
+            android:gravity="left"
+            android:text="地名"
+            app:layout_constraintLeft_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/spinNewHis" />
+
+        <EditText
+            android:id="@+id/edtNewGeographyName"
+            style="@style/MyEditTextStyle"
+            android:layout_height="50dp"
+            android:hint="请输入地名"
+            app:layout_constraintLeft_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtNGeo" />
+
+        <TextView
+            android:id="@+id/txtNMemo"
+            style="@style/customTextViewStyle"
+            android:layout_width="match_parent"
+            android:textSize="15sp"
+            android:layout_height="30dp"
+            android:gravity="left"
+            android:text="说明"
+            app:layout_constraintLeft_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edtNewGeographyName" />
+
+        <EditText
+            android:id="@+id/edtNewMemo"
+            style="@style/MyEditTextStyle"
+            android:layout_height="160dp"
+            android:gravity="top"
+            android:hint="请输入说明"
+            android:scrollbars="vertical"
+            android:inputType="textMultiLine"
+            app:layout_constraintLeft_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtNMemo" />
+
+
+<!--        <Button-->
+<!--            android:id="@+id/btnSaveNew"-->
+<!--            style="@style/btn_nomal_style"-->
+<!--            android:layout_width="100dp"-->
+<!--            android:layout_height="40dp"-->
+<!--            android:gravity="left"-->
+<!--            android:onClick="onbtnSaveNewClick"-->
+<!--            android:text="保存"-->
+<!--            app:layout_constraintStart_toStartOf="parent"-->
+<!--            app:layout_constraintTop_toBottomOf="@+id/edtNewMemo" />-->
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>
